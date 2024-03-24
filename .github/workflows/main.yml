@@ -8,9 +8,9 @@ on:
 jobs:
     hello-world:
         runs-on: 
-            - ubuntu
+            - ubuntu-latest
         steps:
-            - name: "Print hello world"    
+            - name: "Print hello world msg"    
               run: |
                 echo hello world
                 echo print msg2   
