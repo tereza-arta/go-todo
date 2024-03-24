@@ -10,5 +10,10 @@ jobs:
         runs-on:
             - "ubuntu-latest"
         steps:
-            - name: "checkout"
-              run: echo Hello world
+            
+            - name: "Docker build"
+              uses: docker/build-push-action@v5.3.0
+              with:
+                context: "."
+                tags: "go-todo"
+                file: "Dockerfile"
