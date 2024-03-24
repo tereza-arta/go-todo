@@ -3,14 +3,12 @@ name: CI/CD
 on: 
     push: 
         branches: 
-            -"master"
+            - "master"
 
 jobs:
-    hello-world:
-        runs-on: 
-            - ubuntu-latest
+    build:
+        runs-on:
+            - "ubuntu-latest"
         steps:
-            - name: "Print hello world msg"    
-              run: |
-                echo hello world
-                echo print msg2   
+            - name: "checkout"
+              run: echo Hello world
